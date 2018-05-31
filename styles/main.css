@@ -186,6 +186,138 @@ header .main ul li a{
     color: #fff;
 }
 
+/*featrue部分*/
+.feature {
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 0;
+}
+.feature .item {
+    display: inline-block;
+    width: calc(33.333333333% - 3rem);
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+.feature .item + .item {
+    margin-left: 1.5rem;
+}
+.feature .item h3 {
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    font-size: 3.3rem;
+    text-align: center;
+    color: #ff9900;
+}
+.feature .item p {
+    display: inline-block;
+    width: 55%;
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+/*notic*/
+.notice {
+    width: 90%;
+    margin: 2rem auto; 
+    font-size: 1.4rem;
+    line-height: 3rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+.notice span {
+    color: #999;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.notice a {
+    float: left;
+    display: inline-block;
+    text-decoration: none;
+    width: 70%;
+    margin-left: 2rem;
+}
+.notice a:first-child {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.notice a:first-child:before{
+    content: '最新公告: \00a0\00a0';
+    color: #aaa;
+}
+.notice a:last-child {
+    float: right;
+    width: auto;
+    margin-right: 2rem;
+    color: #ff9900;
+}
+
+/*产品列表*/
+.product {
+    width: 90%;
+    background-color: #f5f9fa;
+    border-top: 2px solid #ff9900;
+}
+.product h2 {
+    display: inline-block;
+    width: 20%;
+    float: left;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: normal;
+    color: #635c51;
+}
+.product h2 em {
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.product-content {
+    float: right;
+    width: 79.5%;
+}
+.item h3 {
+    float: left;
+    width: 30%;
+    margin: 1.5rem 0;
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-align: center;
+}
+.item h3 em {
+    margin-right: 1.5rem;
+    font-size: 3.6rem;
+    font-weight: normal;
+    color: #8b999d;
+}
+.info {
+    width: 50%;
+    float: left;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.info p {
+    display: inline-block;
+    width: 56%;
+    float: left;
+    text-align: center;
+}
+.info p span {
+    display: block;
+    font-size: 1.8rem;
+    color: #ff9900;
+}
+.info p:last-child {
+    width: 40%;
+}
+
 /*底部导航*/
 
 footer {
