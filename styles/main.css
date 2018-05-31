@@ -260,8 +260,10 @@ header .main ul li a{
 /*产品列表*/
 .product {
     width: 90%;
+    margin: 2rem auto;
     background-color: #f5f9fa;
     border-top: 2px solid #ff9900;
+    box-shadow: 0 0 4px #ccc;
 }
 .product h2 {
     display: inline-block;
@@ -280,6 +282,13 @@ header .main ul li a{
 .product-content {
     float: right;
     width: 79.5%;
+    border-left: 1px solid #eee;
+}
+.product-content .item {
+    border-top: 1px solid #eee;
+}
+.product-content .item + .item {
+    border-left: 1px solid #eee;
 }
 .item h3 {
     float: left;
@@ -298,7 +307,7 @@ header .main ul li a{
 .info {
     width: 50%;
     float: left;
-    padding: 0 1rem;
+    padding: 1rem;
     font-size: 1.4rem;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
@@ -316,6 +325,62 @@ header .main ul li a{
 }
 .info p:last-child {
     width: 40%;
+}
+.buy {
+    float: left;
+    width: calc(20% - 4.4rem);
+    padding: 1rem;
+}
+.buy a {
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+    line-height: 4rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+.product .product-content .item .buy a:hover,
+.product .product-content .item .buy a:active {
+    background-color: #ffc468;
+}
+.product .product-content .item .buy a.disabled {
+    background-color: #ccc !important;
+    cursor: not-allowed;
+}
+
+/*.footer部分*/
+.footer {
+    padding: 3rem 0;
+    background-color: #fff;
+    border-top: 2px solid #eee;
+}
+.footer-content {
+    width: 90%;
+    margin: 0 auto;
+}
+.footer-content .brand {
+    float: left;
+    display: block;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 20%;
+    height: 35px;
+    background: url('../img/logo@1x.png') no-repeat left;
+    background-size: 150px 35px;
+}
+.footer-content ul {
+    float: left;
+    width: 15%;
+}
+.footer-content ul li {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.footer-content ul li.title {
+    font-size: 1.6rem;
+    line-height: 3rem;
 }
 
 /*底部导航*/
