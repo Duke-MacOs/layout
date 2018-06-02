@@ -129,7 +129,11 @@ header .top ul li a {
 }
 
 @media only screen and (max-width: 30em) {
-
+    header .top .tel,
+    header .top ul li:nth-child(3),
+    header .top ul li:nth-child(4) {
+        display: none;
+    }
 }
 
 header .main {
@@ -151,8 +155,42 @@ header .main ul li a{
     padding: 0 3rem;
     line-height: 5.5rem;
     font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
 }
-
+header .main ul li a:hover,
+header .main ul li a:active,
+header .main ul li a.active {
+    color: #ffb300;
+    background-color: #f8f6f1;
+}
+@media only screen and (max-width: 50em) {
+    header .main .brand {
+        float: none;
+        display: block;
+        padding: 0;
+        margin: 1.5rem auto 1rem;
+        text-align: center;
+    }
+    header .main ul {
+        text-align: center;
+    }
+    header .main ul li {
+        border-left: none;
+    }
+    header .main ul li a {
+        padding: 0 1.5rem;
+    }
+}
+@media only screen and (max-width: 30em) {
+    header .main ul li a {
+        font-weight: normal;
+        padding: 0.5rem;
+    }
+    header .main ul li:first-child {
+        display: none;
+    }
+}
 
 
 
@@ -200,6 +238,34 @@ header .main ul li a{
     line-height: 3rem;
     color: #fff;
 }
+@media only screen and (max-width: 50em) {
+    .trans-data {
+        padding: 1rem 0.5rem;
+    }
+    .trans-data span {
+        font-size: 1.2rem;
+    }
+    .trans-data span.trans-money {
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 30.0625em) {
+    .transaction {
+        padding: 0.5rem 0;
+    }
+    .trans-data, .trans-report a {
+        padding: 0;
+    }
+    .trans-data, .trans-report {
+        float: none;
+        text-align: center;
+    }
+}
 
 /*featrue部分*/
 .feature {
@@ -235,6 +301,36 @@ header .main ul li a{
     padding: 0;
     color: #999;
 }
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
+    .feature .item h3, 
+    .feature .item p {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 2.6rem;
+    }
+    .feature .item p {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 30.0625em) {
+    .feature {
+        width: 96%;
+        margin: 1rem auto;
+    }
+    .feature .item {
+        display: block;
+        width: auto;
+    }
+    .feature .item + .item {
+        margin: 1rem 0 0;
+    }
+    /*.feature .item h3,
+    .feature .item p {
+        display: inline-block;
+    }*/
+}
+
 /*notic*/
 .notice {
     width: 90%;
@@ -270,6 +366,19 @@ header .main ul li a{
     width: auto;
     margin-right: 2rem;
     color: #ff9900;
+}
+@media only screen and (max-width: 30em) {
+    .notice {
+        width: 96%;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+    }
+    .notice a {
+        margin-left: 1rem;
+    }
+    .notice a span {
+        display: none;
+    }
 }
 
 /*产品列表*/
@@ -364,6 +473,62 @@ header .main ul li a{
     background-color: #ccc !important;
     cursor: not-allowed;
 }
+@media only screen and (max-width: 50em) {
+    .product h2 {
+        float: none;
+        display: block;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .product h2 em {
+        display: inline;
+        font-size: 1.2rem;
+    }
+    .product .product-content {
+        width: 100%;
+    }
+    .product .product-content .item .buy a {
+        margin: 0.5rem auto;
+    }
+}
+@media only screen and (max-width: 30.0625em) {
+    .product {
+        width: 96%;
+    }
+
+    .product h2 em:first-child:before {
+        content: " ";
+        display: table;
+    }
+
+    .product .product-content .item h3 em {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+     .product .product-content .item .info {
+        float: right;
+        width: 70%;
+        padding: 0.5rem 0;
+        border: none;
+    }
+     .product .product-content .item .info p span {
+        font-size: 1.8rem;
+    }
+
+    .product .product-content .item .buy {
+        float: none;
+        width: 100%;
+        padding: 1rem 0 2rem;
+        clear: both;
+    }
+   
+    .product .product-content .item .buy a {
+        margin-top: 0;
+        max-width: 26rem;
+    }
+
+
+}
 
 /*.footer部分*/
 .footer {
@@ -396,6 +561,32 @@ header .main ul li a{
 .footer-content ul li.title {
     font-size: 1.6rem;
     line-height: 3rem;
+}
+@media only screen and (max-width: 50em) {
+    .footer .footer-content .brand {
+        display: none;
+    }
+    .footer .footer-content ul {
+        width: 20%;
+    }
+    .footer-content ul li {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .footer-content ul li.title {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+}
+@media only screen and (max-width: 30em) {
+    .footer-content {
+        width: 98%;
+    }
+
+    .footer-content ul li.title {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
 }
 
 /*底部导航*/
